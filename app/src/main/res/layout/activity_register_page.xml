@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="joker.bloodbanktest.RegisterPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/donorNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:hint="Name"
+                android:padding="5dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/donorMobileET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:hint="Mobile Number"
+                android:inputType="numberSigned"
+                android:padding="5dp"
+                android:textAlignment="center" />
+
+
+            <EditText
+                android:id="@+id/donorEmailET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="5dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/donorLocationET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:hint="Location"
+                android:padding="5dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/donorPassET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/confirmPassET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:textAlignment="center" />
+
+            <Spinner
+                android:id="@+id/donorBloodSP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:hint="Blood Group"
+                android:padding="10dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/donorAgeET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:hint="Age"
+                android:inputType="numberDecimal"
+                android:padding="5dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/donorWeightET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:hint="Weight in Kg"
+                android:inputType="numberDecimal"
+                android:padding="5dp"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/lastDateET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:hint="Last Date of Donate Blood"
+                    android:padding="5dp"
+                    android:textAlignment="center" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/selectDateBTN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select Date " />
+
+                    <TextView
+                        android:id="@+id/neverBTN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="| Never" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Have any bloodborne diseases?" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chkbtn1"
+                        android:text="HIV"
+
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chkbtn2"
+                        android:text="Hep B"
+
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/signUpBTN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="50dp"
+                android:text="SIGN UP" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
